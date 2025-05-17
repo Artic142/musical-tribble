@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    width: 20%;
+
+    span {
+        color: #ff5500;
+    }
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+/* home section */
+.main {
+    background: url('./homepage.jpg') center center/cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.main-section {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+
+    h1 {
+        font-weight: bolder;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.main-section button {
+    background-color: #ff5900;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-section button:hover {
+    background-color: #e45c02e6;
+
+}
+
+/* program section */
+.program {
+    text-align: center;
+    background: #fff;
+    margin-bottom: 50px;
+}
+
+.program h2 {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.program-card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.card h3 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* get started section */
+.getstarted {
+    background-color: #ff5900;
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.getstarted h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.getstarted p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.getstarted button {
+    background-color: #f25a07;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.getstarted button:hover {
+    background-color: #e45c02e6;
+}
+
+/* footer section */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+    span {
+        color: #ff5500;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-section h1 {
+        font-size: 32px;
+    }
+
+    .main-section p {
+        font-size: 18px;
+    }
+
+    .program-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-section h1 {
+        font-size: 26px;
+    }
+
+    .main-section p,
+    .getstarted p {
+        font-size: 16px;
+    }
+
+    .getstarted h2 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .main-section button,
+    .getstarted button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
